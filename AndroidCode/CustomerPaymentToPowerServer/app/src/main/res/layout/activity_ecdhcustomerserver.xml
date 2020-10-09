@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        tools:context=".ECDHCustomerServer">
+
+        <TextView
+            android:id="@+id/securechannel_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="ECDH Key exchange between Customer Mobile and Bank Server"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/howIsConnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/client_pub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Customer Public Key:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/client_pri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Customer Private Key:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fromserver_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="From Bank Server"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/server_pub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Bank Public Key:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/atclent_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="At Customer"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/client_aes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="ECDH Generated AES Key:"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+
+
+
+        <Button
+            android:id="@+id/accessApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:onClick="accessApp"
+            android:text="Access App"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tempspace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="#3F51B5"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+</ScrollView>

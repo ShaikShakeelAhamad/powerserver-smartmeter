@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        tools:context=".CustomerInfo">
+
+        <TextView
+            android:id="@+id/securechannel_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Customer Information"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/cid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Customer ID: PSCUS89562"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Customer Name: CustomerC"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ctype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Connection Type: HOMESMP1"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/smid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Smart Meter ID: SM6384953"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/caddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Address: HNo: 840, Street 2, City P"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/beginPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginTop="10dp"
+            android:onClick="payBill"
+            android:text="Begin Payment"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
